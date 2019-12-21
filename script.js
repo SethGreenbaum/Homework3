@@ -145,12 +145,13 @@ function generatePassword() {
     alert("Please try again and select character types");
   }
 }
+
   return retVal;
 };
 
 // Function for copying contents of password text field
 function copyToClipboard() {
-
+    
   var copyText = document.getElementById("password");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
