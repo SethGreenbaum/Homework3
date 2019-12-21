@@ -15,7 +15,7 @@ body,
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
-  background-image: linear-gradient(red,yellow);
+  background-image: linear-gradient(#9b45a5,#2d9c69);
 }
 
 .wrapper {
@@ -28,8 +28,8 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
-  font-family: fantasy;
+  color: #f9fbfd;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card {

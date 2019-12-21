@@ -16,7 +16,16 @@ function writePassword() {
 
 // function for generating a random password based on prompted conditions
 function generatePassword() {
-  var passwordLength = prompt("How long is your password (min=1, max=128)?");
+  var passwordLength = prompt("How long is your password? (min=1, max=128)?");
+
+  var pwLength = parseFloat(passwordLength);
+
+  if (pwLength>128){
+      alert("password is too long!")
+  } else if (pwLength===0) {
+      alert("password too short!")
+  } else {
+
   var passwordCaps = confirm("Do you want to include capital letters?");
   var passwordLower = confirm("Do you want to include lowercase letters?");
   var passwordSpecial = confirm("Do you want to include special characters?");
@@ -26,8 +35,6 @@ function generatePassword() {
   var lowSet = "abcdefghijklmnopqrstuvwxyz";
   var specSet = "@%+/\,!#$^?:.}{[]()~`-_";
   var numSet ="1234567890";
-
-  var pwLength = parseFloat(passwordLength);
 
   if (passwordCaps === true && passwordLower === true && passwordSpecial === true && passwordNumber === true) {
     alert("Thank you! your password is being generated...");
@@ -137,6 +144,7 @@ function generatePassword() {
   } else {
     alert("Please try again and select character types");
   }
+}
   return retVal;
 };
 
